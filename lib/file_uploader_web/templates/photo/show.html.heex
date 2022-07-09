@@ -1,0 +1,13 @@
+<h1>Show Photo</h1>
+
+<ul>
+
+  <li>
+    <strong>Picture:</strong>
+    <%= img_tag FileUploader.FileImage.url({@photo.picture, @photo}, signed: true) %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.photo_path(@conn, :edit, @photo) %></span> |
+<span><%= link "Back", to: Routes.photo_path(@conn, :index) %></span>
