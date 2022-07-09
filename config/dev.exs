@@ -29,7 +29,7 @@ config :file_uploader, FileUploaderWeb.Endpoint,
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
   ]
 
-  config :waffle, storage: Waffle.Storage.Local
+config :waffle, storage: Waffle.Storage.Local
 
 # ## SSL Support
 #

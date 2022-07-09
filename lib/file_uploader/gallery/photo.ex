@@ -1,7 +1,7 @@
 defmodule FileUploader.Gallery.Photo do
-  use  Ecto.Schema
-  use  Waffle.Ecto.Schema
-  import  Ecto.Changeset
+  use Ecto.Schema
+  use Waffle.Ecto.Schema
+  import Ecto.Changeset
 
   schema "photos" do
     field :picture, FileUploader.FileImage.Type
